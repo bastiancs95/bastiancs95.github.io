@@ -2,114 +2,467 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Bastián | Control de Gestión</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bastián Castillo Silva - Analista de Datos & Control de Gestión. Power BI, SQL, Python, IA.">
+    <title>Bastián Castillo | Analista de Datos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar">
-        <h2>Bastián</h2>
-        <ul>
-            <li><a href="#sobre">Sobre mí</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#liderazgo">Liderazgo</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-logo">BC<span class="accent">.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </nav>
 
     <!-- HERO -->
-    <header class="hero">
-        <h1>Ingeniero en Información y Control de Gestión</h1>
-        <p>Transformo datos en decisiones estratégicas</p>
-        <p class="sub">Power BI | SQL | Business Analytics</p>
-        <a href="#contacto" class="btn">Contáctame</a>
-    </header>
+    <section class="hero" id="inicio">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <p class="hero-greeting fade-up">Hola, soy</p>
+            <h1 class="hero-name fade-up">Bastián Castillo</h1>
+            <h2 class="hero-title fade-up">
+                Analista de Datos &amp; <span class="accent">Control de Gestión</span>
+            </h2>
+            <p class="hero-desc fade-up">
+                Transformo datos en decisiones estratégicas. Especializado en Power BI,
+                SQL, Python y automatización de procesos con IA.
+            </p>
+            <div class="hero-actions fade-up">
+                <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+                <a href="#contacto" class="btn btn-outline">Contactar</a>
+            </div>
+            <div class="hero-stats fade-up">
+                <div class="stat">
+                    <span class="stat-num">+20</span>
+                    <span class="stat-label">KPIs diseñados</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">-8h</span>
+                    <span class="stat-label">Trabajo manual/semana</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">+12.5%</span>
+                    <span class="stat-label">Mejora en ROI</span>
+                </div>
+            </div>
+        </div>
+        <a href="#sobre-mi" class="hero-scroll" aria-label="Ir abajo">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </a>
+    </section>
 
-    <!-- SOBRE MI -->
-    <section id="sobre">
-        <h2>Sobre mí</h2>
-        <p>
-            Analista con experiencia en control de gestión y análisis de datos.
-            Especializado en la construcción de dashboards, modelado de datos y generación de KPIs
-            para apoyar la toma de decisiones estratégicas en áreas comerciales y operativas.
-        </p>
+    <!-- SOBRE MÍ -->
+    <section class="section" id="sobre-mi">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Sobre mí</span>
+                <h2 class="section-title">¿Quién soy?</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        Soy <strong>Ingeniero en Información y Control de Gestión</strong>, graduado con
+                        <strong>Distinción Máxima</strong> de la Universidad Austral de Chile. Con más de
+                        2 años de experiencia en analítica de datos, diseño dashboards ejecutivos, construyo
+                        pipelines de datos y automatizo procesos con SQL, Python y N8N.
+                    </p>
+                    <p>
+                        Mi enfoque está en traducir datos complejos en narrativas claras que permitan a
+                        equipos directivos tomar decisiones rápidas con respaldo analítico. He trabajado
+                        en ambientes B2B, supply chain y marketing, siempre orientado a resultados medibles.
+                    </p>
+                    <p>
+                        Fuera del trabajo, compito como <strong>atleta amateur en 100m y 200m planos</strong>.
+                        La disciplina y mentalidad de alto rendimiento del deporte las traslado directamente
+                        a mis proyectos profesionales.
+                    </p>
+                </div>
+                <div class="about-card reveal">
+                    <div class="about-info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <span class="info-label">Ubicación</span>
+                            <span class="info-value">Santiago, Chile</span>
+                        </div>
+                    </div>
+                    <div class="about-info-item">
+                        <span class="info-icon">🎓</span>
+                        <div>
+                            <span class="info-label">Educación</span>
+                            <span class="info-value">Universidad Austral de Chile</span>
+                        </div>
+                    </div>
+                    <div class="about-info-item">
+                        <span class="info-icon">💼</span>
+                        <div>
+                            <span class="info-label">Disponibilidad</span>
+                            <span class="info-value">Abierto a oportunidades</span>
+                        </div>
+                    </div>
+                    <div class="about-info-item">
+                        <span class="info-icon">🌐</span>
+                        <div>
+                            <span class="info-label">Idiomas</span>
+                            <span class="info-value">Español (nativo) · Inglés (B2)</span>
+                        </div>
+                    </div>
+                    <div class="about-info-item">
+                        <span class="info-icon">🏃</span>
+                        <div>
+                            <span class="info-label">Intereses</span>
+                            <span class="info-value">Atletismo · IA · Data Science</span>
+                        </div>
+                    </div>
+                    <a href="mailto:bastiancs@hotmail.com" class="btn btn-primary about-btn">Enviar mensaje</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section section-alt" id="habilidades">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Stack técnico</span>
+                <h2 class="section-title">Habilidades</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-cat-header">
+                        <span class="cat-icon">📊</span>
+                        <h3 class="skill-cat-title">Análisis & BI</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag tag-cyan">Power BI</span>
+                        <span class="tag tag-cyan">DAX Avanzado</span>
+                        <span class="tag tag-cyan">SQL</span>
+                        <span class="tag tag-cyan">Python</span>
+                        <span class="tag tag-cyan">Excel Avanzado</span>
+                        <span class="tag tag-cyan">RStudio</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-cat-header">
+                        <span class="cat-icon">⚡</span>
+                        <h3 class="skill-cat-title">Automatización</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag tag-indigo">N8N</span>
+                        <span class="tag tag-indigo">Python Pipelines</span>
+                        <span class="tag tag-indigo">ETL</span>
+                        <span class="tag tag-indigo">IA Generativa</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-cat-header">
+                        <span class="cat-icon">🔧</span>
+                        <h3 class="skill-cat-title">Gestión & ERP</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag tag-emerald">JIRA</span>
+                        <span class="tag tag-emerald">SCRUM / KANBAN</span>
+                        <span class="tag tag-emerald">Salesforce CRM</span>
+                        <span class="tag tag-emerald">SAP</span>
+                        <span class="tag tag-emerald">SharePoint</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- EXPERIENCIA -->
-    <section id="experiencia">
-        <h2>Experiencia</h2>
+    <section class="section" id="experiencia">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Trayectoria</span>
+                <h2 class="section-title">Experiencia Profesional</h2>
+            </div>
+            <div class="timeline">
 
-        <div class="card">
-            <h3>BG Chile - Analista Control de Gestión</h3>
-            <p>
-                Construcción de indicadores comerciales, análisis de desempeño y desarrollo de dashboards
-                en Power BI para áreas comerciales y supply chain.
-            </p>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot active"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Analista de Planeamiento y Control de Gestión</h3>
+                                <p class="timeline-company">BG Chile Pauvic SPA · Santiago</p>
+                            </div>
+                            <span class="timeline-period">Sep 2025 – Actualidad</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Diseñé y estandaricé <strong>20+ KPIs</strong> para áreas comerciales, operativas y supply chain, con dashboards en Power BI consumidos diariamente por jefatura ejecutiva y equipo comercial de 8 personas.</li>
+                            <li>Centralicé el análisis de márgenes de rentabilidad mediante cost breakdowns de importaciones aéreas y marítimas, acelerando la toma de decisiones de compra.</li>
+                            <li>Automaticé reportes recurrentes de la cartera B2B, garantizando disponibilidad y consistencia sin intervención manual.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag-sm">Power BI</span>
+                            <span class="tag-sm">DAX</span>
+                            <span class="tag-sm">SQL</span>
+                            <span class="tag-sm">Supply Chain</span>
+                            <span class="tag-sm">B2B</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Analista de Control de Gestión</h3>
+                                <p class="timeline-company">VNGS Consultorías SPA · Puerto Montt</p>
+                            </div>
+                            <span class="timeline-period">May 2024 – Ago 2025</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Diseñé y mantuve <strong>20+ KPIs</strong> para campañas comerciales (CAC, tasa de conversión, ROI), logrando un aumento del <strong>12.5% en ROI</strong> durante Q2-2024.</li>
+                            <li>Desarrollé dashboards dinámicos en Power BI para marketing, comercial y operaciones, eliminando <strong>8 horas semanales</strong> de trabajo manual por área.</li>
+                            <li>Implementé tableros JIRA (SCRUM/KANBAN) para 4 áreas, estandarizando 100+ tareas/mes y reduciendo tiempos de respuesta entre áreas en 40%.</li>
+                            <li>Automaticé pipelines ETL con SQL y Python, eliminando procesos manuales recurrentes en múltiples áreas del negocio.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag-sm">Power BI</span>
+                            <span class="tag-sm">Python</span>
+                            <span class="tag-sm">SQL</span>
+                            <span class="tag-sm">JIRA</span>
+                            <span class="tag-sm">ETL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Práctica Profesional – Trade Marketing</h3>
+                                <p class="timeline-company">British American Tobacco · Puerto Montt</p>
+                            </div>
+                            <span class="timeline-period">Ene 2022 – Abr 2022</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Diseño de paneles interactivos en Power BI para visualización de KPIs de desempeño en tiempo real.</li>
+                            <li>Gestión de datos en CRM Salesforce y ERP SAP, asegurando integridad y precisión de información de clientes y pedidos.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag-sm">Power BI</span>
+                            <span class="tag-sm">Salesforce</span>
+                            <span class="tag-sm">SAP</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-
-        <div class="card">
-            <h3>VNGS Consultorías</h3>
-            <p>
-                Creación de +20 KPIs, aumento de ROI en 12,5% y automatización de reportes,
-                reduciendo hasta 8 horas semanales por área.
-            </p>
-        </div>
-
     </section>
 
     <!-- PROYECTOS -->
-    <section id="proyectos">
-        <h2>Proyectos</h2>
+    <section class="section section-alt" id="proyectos">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Portafolio</span>
+                <h2 class="section-title">Proyectos</h2>
+            </div>
+            <div class="projects-grid">
 
-        <div class="card">
-            <h3>Dashboards Power BI</h3>
-            <p>
-                Diseño de modelos de datos, relaciones entre tablas, medidas DAX y visualización
-                para áreas comerciales, marketing y operaciones.
-            </p>
+                <div class="project-card reveal">
+                    <div class="project-top">
+                        <span class="project-icon">📊</span>
+                        <a href="https://github.com/bastiancs95" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Dashboard Ejecutivo B2B</h3>
+                    <p class="project-desc">Sistema de indicadores en Power BI para seguimiento de cartera B2B en tiempo real. Análisis de márgenes, KPIs comerciales y reporting automatizado para jefatura ejecutiva.</p>
+                    <div class="project-stack">
+                        <span class="tag-sm">Power BI</span>
+                        <span class="tag-sm">DAX</span>
+                        <span class="tag-sm">SQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-top">
+                        <span class="project-icon">⚡</span>
+                        <a href="https://github.com/bastiancs95" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Pipeline de Automatización ETL</h3>
+                    <p class="project-desc">Automatización de extracción, transformación y carga de datos con Python y SQL. Elimina 8+ horas semanales de trabajo manual, garantizando consistencia y disponibilidad de información.</p>
+                    <div class="project-stack">
+                        <span class="tag-sm">Python</span>
+                        <span class="tag-sm">SQL</span>
+                        <span class="tag-sm">ETL</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-top">
+                        <span class="project-icon">🌐</span>
+                        <a href="https://github.com/bastiancs95/mywebsite" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-desc">Sitio web de portafolio personal construido con HTML, CSS y JavaScript vanilla. Diseño moderno y responsivo con animaciones de scroll, dark theme y optimización SEO.</p>
+                    <div class="project-stack">
+                        <span class="tag-sm">HTML</span>
+                        <span class="tag-sm">CSS</span>
+                        <span class="tag-sm">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-top">
+                        <span class="project-icon">🤖</span>
+                        <a href="https://github.com/bastiancs95" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Flujos Automatizados N8N + IA</h3>
+                    <p class="project-desc">Creación de flujos de automatización con N8N e IA generativa para integración de datos entre sistemas, notificaciones y procesos comerciales recurrentes sin código.</p>
+                    <div class="project-stack">
+                        <span class="tag-sm">N8N</span>
+                        <span class="tag-sm">IA Generativa</span>
+                        <span class="tag-sm">Automatización</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="section-footer reveal">
+                <a href="https://github.com/bastiancs95" target="_blank" rel="noopener" class="btn btn-outline">
+                    Ver más en GitHub →
+                </a>
+            </div>
         </div>
-
-        <div class="card">
-            <h3>Automatización de reportes</h3>
-            <p>
-                Implementación de soluciones que reducen carga operativa y mejoran la disponibilidad
-                de información en tiempo real.
-            </p>
-        </div>
-
     </section>
 
-    <!-- LIDERAZGO / EXPERIENCIA DIFERENCIAL -->
-    <section id="liderazgo">
-        <h2>Experiencia Internacional & Liderazgo</h2>
+    <!-- EDUCACIÓN -->
+    <section class="section" id="educacion">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Formación</span>
+                <h2 class="section-title">Educación & Certificaciones</h2>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-card reveal">
+                    <span class="edu-icon">🎓</span>
+                    <div>
+                        <h3 class="edu-title">Ingeniero en Información y Control de Gestión</h3>
+                        <p class="edu-institution">Universidad Austral de Chile</p>
+                        <p class="edu-period">2018 – 2023 · <strong>Distinción Máxima</strong></p>
+                    </div>
+                </div>
+                <div class="edu-card reveal">
+                    <span class="edu-icon">🌍</span>
+                    <div>
+                        <h3 class="edu-title">Intercambio Internacional – Beca Excelencia Académica</h3>
+                        <p class="edu-institution">Universidad de Málaga, España · Programa Santander Universidades</p>
+                        <p class="edu-period">Sep 2022 – Feb 2023</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="card">
-            <h3>Intercambio académico - España</h3>
-            <p>
-                Universidad de Málaga. Becado por excelencia académica, desarrollando habilidades
-                interculturales y adaptabilidad en entornos internacionales.
-            </p>
+            <h3 class="certs-title reveal">Certificaciones</h3>
+            <div class="certs-grid">
+                <div class="cert-card reveal">
+                    <span class="cert-icon">🤖</span>
+                    <div>
+                        <p class="cert-name">Claude 101 & Claude Code 101</p>
+                        <p class="cert-issuer">Anthropic · Mar 2026</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <span class="cert-icon">💰</span>
+                    <div>
+                        <p class="cert-name">Financial Forecasting and Budgeting Blueprint</p>
+                        <p class="cert-issuer">Udemy · Sep 2025</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <span class="cert-icon">📊</span>
+                    <div>
+                        <p class="cert-name">Power BI Total – Analista de datos avanzado</p>
+                        <p class="cert-issuer">Udemy · Ago 2025</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <span class="cert-icon">🐍</span>
+                    <div>
+                        <p class="cert-name">Python para Data Science & Machine Learning</p>
+                        <p class="cert-issuer">Udemy · Dic 2024</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <span class="cert-icon">🔬</span>
+                    <div>
+                        <p class="cert-name">Introducción a la Ciencia de Datos</p>
+                        <p class="cert-issuer">IE University / Santander Open Academy · Feb 2024</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="card">
-            <h3>Coordinador turístico - Rotary</h3>
-            <p>
-                Lideré grupos de estudiantes internacionales en rutas como San Pedro de Atacama
-                y Torres del Paine, gestionando logística, coordinación y experiencia del cliente.
-            </p>
-        </div>
-
     </section>
 
     <!-- CONTACTO -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Email: bastiancs@hotmail.com</p>
-        <p>Teléfono: +56 9 XXXX XXXX</p>
-        <p>LinkedIn: linkedin.com/in/bastiancs95</p>
+    <section class="section section-alt" id="contacto">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">¿Hablamos?</span>
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-subtitle reveal">¿Tienes un proyecto o una oportunidad? Escríbeme y te respondo pronto.</p>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:bastiancs@hotmail.com" class="contact-card reveal">
+                    <span class="contact-icon">✉️</span>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">bastiancs@hotmail.com</span>
+                </a>
+                <a href="https://linkedin.com/in/bastiancs95" target="_blank" rel="noopener" class="contact-card reveal">
+                    <span class="contact-icon">💼</span>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">linkedin.com/in/bastiancs95</span>
+                </a>
+                <a href="https://github.com/bastiancs95" target="_blank" rel="noopener" class="contact-card reveal">
+                    <span class="contact-icon">💻</span>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">github.com/bastiancs95</span>
+                </a>
+                <a href="tel:+56983878181" class="contact-card reveal">
+                    <span class="contact-icon">📱</span>
+                    <span class="contact-label">Teléfono</span>
+                    <span class="contact-value">+56 9 8387 8181</span>
+                </a>
+            </div>
+        </div>
     </section>
 
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Bastián Castillo Silva · Hecho con dedicación en Santiago, Chile</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
