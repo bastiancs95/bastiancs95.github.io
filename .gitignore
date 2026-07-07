@@ -1,0 +1,6 @@
+.playwright-mcp/
+playwright-output/
+Recursos/
+graphify-out/
+.claude/
+.mcp.json
